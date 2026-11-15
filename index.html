@@ -144,4 +144,526 @@
                 </div>
 
                 <div class="lg:col-span-5">
-                    <div class="bg-clinicalBg rounded-2xl border border-slate-200 p
+                    <div class="bg-clinicalBg rounded-2xl border border-slate-200 p-6 sm:p-8 shadow-sm space-y-6">
+                        <div class="flex items-center space-x-4 border-b border-slate-200 pb-5">
+                            <div class="w-16 h-16 rounded-2xl bg-gradient-to-br from-navy to-teal text-white flex items-center justify-center font-bold text-2xl shadow-sm shrink-0">
+                                SP
+                            </div>
+                            <div>
+                                <span class="text-xs font-bold uppercase tracking-wider text-teal">Clinical Snapshot</span>
+                                <h2 class="text-lg font-bold text-navy">Evidence Based Care</h2>
+                                <p class="text-xs sm:text-sm text-slate-500">Inpatient &amp; Outpatient Rehabilitation</p>
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div class="bg-white p-4 rounded-xl border border-slate-200/80 shadow-sm">
+                                <div class="w-9 h-9 rounded-lg bg-navy/10 text-navy flex items-center justify-center mb-2.5">
+                                    <i class="fa-solid fa-hospital-user"></i>
+                                </div>
+                                <p class="text-sm font-bold text-navy">5 Clinical Roles</p>
+                                <p class="text-xs text-slate-500 mt-0.5">Across IPD &amp; OPD settings</p>
+                            </div>
+
+                            <div class="bg-white p-4 rounded-xl border border-slate-200/80 shadow-sm">
+                                <div class="w-9 h-9 rounded-lg bg-teal/10 text-teal flex items-center justify-center mb-2.5">
+                                    <i class="fa-solid fa-graduation-cap"></i>
+                                </div>
+                                <p class="text-sm font-bold text-navy">Master's Candidate</p>
+                                <p class="text-xs text-slate-500 mt-0.5">Neurophysiotherapy at MUHS</p>
+                            </div>
+
+                            <div class="bg-white p-4 rounded-xl border border-slate-200/80 shadow-sm">
+                                <div class="w-9 h-9 rounded-lg bg-teal/10 text-teal flex items-center justify-center mb-2.5">
+                                    <i class="fa-solid fa-certificate"></i>
+                                </div>
+                                <p class="text-sm font-bold text-navy">6 Certifications</p>
+                                <p class="text-xs text-slate-500 mt-0.5">Specialized clinical workshops</p>
+                            </div>
+
+                            <div class="bg-white p-4 rounded-xl border border-slate-200/80 shadow-sm">
+                                <div class="w-9 h-9 rounded-lg bg-navy/10 text-navy flex items-center justify-center mb-2.5">
+                                    <i class="fa-solid fa-language"></i>
+                                </div>
+                                <p class="text-sm font-bold text-navy">Multilingual Care</p>
+                                <p class="text-xs text-slate-500 mt-0.5">English, Hindi &amp; Marathi</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT & CORE CLINICAL COMPETENCIES -->
+    <section id="about" class="py-16 sm:py-20">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 space-y-14">
+            
+            <div class="bg-white rounded-2xl border border-slate-200 p-6 sm:p-10 shadow-sm">
+                <div class="max-w-3xl space-y-4">
+                    <span class="text-xs font-bold uppercase tracking-wider text-teal">About &amp; Clinical Philosophy</span>
+                    <h2 class="text-2xl sm:text-3xl font-bold text-navy tracking-tight">Professional Summary</h2>
+                    <p class="text-base sm:text-lg text-slate-700 leading-relaxed">
+                        Dedicated physiotherapist with hands-on clinical experience across inpatient and outpatient departments. Specialized in neurological rehabilitation for pediatric and adult patients, utilizing advanced techniques such as the Bobath approach and neurodynamic solutions. Proven ability to design individualized treatment plans, conduct comprehensive patient assessments, and guide patients through postsurgical recovery. Committed to evidence-based practice and restoring functional mobility.
+                    </p>
+                </div>
+            </div>
+
+            <div id="specializations" class="space-y-6">
+                <div class="flex flex-col md:flex-row md:items-end justify-between gap-4">
+                    <div>
+                        <span class="text-xs font-bold uppercase tracking-wider text-teal">Areas of Practice</span>
+                        <h2 class="text-2xl sm:text-3xl font-bold text-navy tracking-tight mt-1">Core Clinical Competencies</h2>
+                    </div>
+
+                    <div class="flex flex-wrap gap-2" role="group" aria-label="Filter clinical competencies">
+                        <button onclick="filterCompetencies('all', this)" class="comp-filter-btn active px-3.5 py-2 rounded-xl text-xs sm:text-sm font-semibold bg-navy text-white shadow-sm transition">
+                            All Specialties (9)
+                        </button>
+                        <button onclick="filterCompetencies('neuro', this)" class="comp-filter-btn px-3.5 py-2 rounded-xl text-xs sm:text-sm font-semibold bg-white text-slate-600 border border-slate-200 hover:border-navy/30 transition">
+                            Neurological
+                        </button>
+                        <button onclick="filterCompetencies('ortho', this)" class="comp-filter-btn px-3.5 py-2 rounded-xl text-xs sm:text-sm font-semibold bg-white text-slate-600 border border-slate-200 hover:border-navy/30 transition">
+                            Manual &amp; Surgical
+                        </button>
+                        <button onclick="filterCompetencies('care', this)" class="comp-filter-btn px-3.5 py-2 rounded-xl text-xs sm:text-sm font-semibold bg-white text-slate-600 border border-slate-200 hover:border-navy/30 transition">
+                            Assessment &amp; Wellness
+                        </button>
+                    </div>
+                </div>
+
+                <div id="competencies-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+                    <div data-category="neuro" class="comp-card bg-white rounded-2xl border border-slate-200 p-6 shadow-sm hover:shadow-md hover:border-teal/40 transition-all duration-200">
+                        <div class="w-11 h-11 rounded-xl bg-teal/10 text-teal flex items-center justify-center mb-4">
+                            <i class="fa-solid fa-brain text-lg"></i>
+                        </div>
+                        <h3 class="text-base font-bold text-navy mb-2">Neurological Rehabilitation (Pediatric &amp; Adult)</h3>
+                        <p class="text-sm text-slate-600 leading-relaxed">Targeted neurodevelopmental and motor control interventions tailored for pediatric conditions and adult neurological recovery.</p>
+                    </div>
+
+                    <div data-category="neuro" class="comp-card bg-white rounded-2xl border border-slate-200 p-6 shadow-sm hover:shadow-md hover:border-teal/40 transition-all duration-200">
+                        <div class="w-11 h-11 rounded-xl bg-navy/10 text-navy flex items-center justify-center mb-4">
+                            <i class="fa-solid fa-person-walking text-lg"></i>
+                        </div>
+                        <h3 class="text-base font-bold text-navy mb-2">Bobath Approach</h3>
+                        <p class="text-sm text-slate-600 leading-relaxed">Specialized clinical handling and postural control strategies aimed at optimizing movement efficiency in hemiplegia and central nervous system disorders.</p>
+                    </div>
+
+                    <div data-category="neuro" class="comp-card bg-white rounded-2xl border border-slate-200 p-6 shadow-sm hover:shadow-md hover:border-teal/40 transition-all duration-200">
+                        <div class="w-11 h-11 rounded-xl bg-teal/10 text-teal flex items-center justify-center mb-4">
+                            <i class="fa-solid fa-network-wired text-lg"></i>
+                        </div>
+                        <h3 class="text-base font-bold text-navy mb-2">Neurodynamic Solutions</h3>
+                        <p class="text-sm text-slate-600 leading-relaxed">Upper and lower limb neural mobilization techniques to alleviate nerve root irritation and restore healthy peripheral nerve mechanics.</p>
+                    </div>
+
+                    <div data-category="ortho" class="comp-card bg-white rounded-2xl border border-slate-200 p-6 shadow-sm hover:shadow-md hover:border-teal/40 transition-all duration-200">
+                        <div class="w-11 h-11 rounded-xl bg-navy/10 text-navy flex items-center justify-center mb-4">
+                            <i class="fa-solid fa-hands-holding-circle text-lg"></i>
+                        </div>
+                        <h3 class="text-base font-bold text-navy mb-2">Manual Therapy Techniques</h3>
+                        <p class="text-sm text-slate-600 leading-relaxed">Hands-on joint mobilization, soft tissue release, and integrated manual techniques to reduce pain and restore joint kinematics.</p>
+                    </div>
+
+                    <div data-category="care" class="comp-card bg-white rounded-2xl border border-slate-200 p-6 shadow-sm hover:shadow-md hover:border-teal/40 transition-all duration-200">
+                        <div class="w-11 h-11 rounded-xl bg-teal/10 text-teal flex items-center justify-center mb-4">
+                            <i class="fa-solid fa-clipboard-check text-lg"></i>
+                        </div>
+                        <h3 class="text-base font-bold text-navy mb-2">Clinical Assessment &amp; Evaluation</h3>
+                        <p class="text-sm text-slate-600 leading-relaxed">Comprehensive evaluation of pain, range of motion, muscle strength, posture, and functional mobility to establish clear recovery baselines.</p>
+                    </div>
+
+                    <div data-category="ortho" class="comp-card bg-white rounded-2xl border border-slate-200 p-6 shadow-sm hover:shadow-md hover:border-teal/40 transition-all duration-200">
+                        <div class="w-11 h-11 rounded-xl bg-navy/10 text-navy flex items-center justify-center mb-4">
+                            <i class="fa-solid fa-crutch text-lg"></i>
+                        </div>
+                        <h3 class="text-base font-bold text-navy mb-2">Postsurgical Rehabilitation</h3>
+                        <p class="text-sm text-slate-600 leading-relaxed">Structured inpatient early mobilization, respiratory care, and progressive outpatient strengthening following orthopedic and medical surgeries.</p>
+                    </div>
+
+                    <div data-category="care" class="comp-card bg-white rounded-2xl border border-slate-200 p-6 shadow-sm hover:shadow-md hover:border-teal/40 transition-all duration-200">
+                        <div class="w-11 h-11 rounded-xl bg-teal/10 text-teal flex items-center justify-center mb-4">
+                            <i class="fa-solid fa-heart-pulse text-lg"></i>
+                        </div>
+                        <h3 class="text-base font-bold text-navy mb-2">Antenatal &amp; Postnatal Physiotherapy</h3>
+                        <p class="text-sm text-slate-600 leading-relaxed">Safe, certified exercise prescription supporting maternal musculoskeletal health, core stability, and postpartum recovery.</p>
+                    </div>
+
+                    <div data-category="care" class="comp-card bg-white rounded-2xl border border-slate-200 p-6 shadow-sm hover:shadow-md hover:border-teal/40 transition-all duration-200">
+                        <div class="w-11 h-11 rounded-xl bg-navy/10 text-navy flex items-center justify-center mb-4">
+                            <i class="fa-solid fa-comments text-lg"></i>
+                        </div>
+                        <h3 class="text-base font-bold text-navy mb-2">Patient Education &amp; Counseling</h3>
+                        <p class="text-sm text-slate-600 leading-relaxed">Clear posture correction, ergonomic guidance, and tailored home exercise programmes empowering long-term self-management.</p>
+                    </div>
+
+                    <div data-category="care" class="comp-card bg-white rounded-2xl border border-slate-200 p-6 shadow-sm hover:shadow-md hover:border-teal/40 transition-all duration-200">
+                        <div class="w-11 h-11 rounded-xl bg-teal/10 text-teal flex items-center justify-center mb-4">
+                            <i class="fa-solid fa-microscope text-lg"></i>
+                        </div>
+                        <h3 class="text-base font-bold text-navy mb-2">Evidence-Based Practice</h3>
+                        <p class="text-sm text-slate-600 leading-relaxed">Integrating current clinical research with measurable outcome tracking across multi-week rehabilitation cycles.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CLINICAL EXPERIENCE TIMELINE -->
+    <section id="experience" class="py-16 sm:py-20 bg-white border-y border-slate-200">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="mb-12">
+                <span class="text-xs font-bold uppercase tracking-wider text-teal">Hospital &amp; Outpatient Track Record</span>
+                <h2 class="text-2xl sm:text-3xl font-bold text-navy tracking-tight mt-1">Clinical Experience</h2>
+                <p class="text-sm sm:text-base text-slate-600 mt-2">Progressive clinical practice across leading Mumbai hospitals and health centres.</p>
+            </div>
+
+            <div class="relative border-l-2 border-slate-200 ml-3 sm:ml-5 space-y-8">
+                
+                <div class="relative pl-7 sm:pl-10">
+                    <span class="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-teal ring-4 ring-teal/20"></span>
+                    <div class="bg-clinicalBg rounded-2xl border border-slate-200 p-6 sm:p-7 shadow-sm">
+                        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-2">
+                            <h3 class="text-lg sm:text-xl font-bold text-navy">Physiotherapist</h3>
+                            <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold bg-teal/10 text-teal w-fit">
+                                June 2026 to Present
+                            </span>
+                        </div>
+                        <p class="text-sm sm:text-base font-semibold text-slate-700 mb-4 flex items-center">
+                            <i class="fa-solid fa-hospital text-teal mr-2"></i>
+                            Manubhai Shah Medical &amp; Research Centre, Mumbai
+                        </p>
+                        <ul class="space-y-2.5 text-sm sm:text-[15px] text-slate-700 list-disc pl-5 leading-relaxed">
+                            <li>Conducted comprehensive clinical assessments for outpatients, evaluating pain, range of motion, muscle strength, posture, and functional mobility.</li>
+                            <li>Designed individualized treatment plans incorporating therapeutic exercises, manual therapy, electrotherapy modalities, and patient education.</li>
+                            <li>Delivered posture correction, ergonomic advice, and structured home exercise programmes for musculoskeletal and postsurgical recovery.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="relative pl-7 sm:pl-10">
+                    <span class="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-navy ring-4 ring-slate-100"></span>
+                    <div class="bg-clinicalBg rounded-2xl border border-slate-200 p-6 sm:p-7 shadow-sm">
+                        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-2">
+                            <h3 class="text-lg sm:text-xl font-bold text-navy">Physiotherapist (Locum)</h3>
+                            <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold bg-slate-200/80 text-slate-700 w-fit">
+                                November 2025
+                            </span>
+                        </div>
+                        <p class="text-sm sm:text-base font-semibold text-slate-700 mb-4 flex items-center">
+                            <i class="fa-solid fa-bed-pulse text-navy mr-2"></i>
+                            Shushrusha Citizens' Co-operative Hospital Ltd, Mumbai
+                        </p>
+                        <ul class="space-y-2.5 text-sm sm:text-[15px] text-slate-700 list-disc pl-5 leading-relaxed">
+                            <li>Provided inpatient physiotherapy services across medical and surgical wards.</li>
+                            <li>Evaluated functional limitations in acute care patients to execute targeted bedside physiotherapy interventions.</li>
+                            <li>Managed postoperative patients, facilitating early mobilization, respiratory care, and safe functional rehabilitation.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="relative pl-7 sm:pl-10">
+                    <span class="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-navy ring-4 ring-slate-100"></span>
+                    <div class="bg-clinicalBg rounded-2xl border border-slate-200 p-6 sm:p-7 shadow-sm">
+                        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-2">
+                            <h3 class="text-lg sm:text-xl font-bold text-navy">Physiotherapist (Locum)</h3>
+                            <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold bg-slate-200/80 text-slate-700 w-fit">
+                                August 2024 to October 2024
+                            </span>
+                        </div>
+                        <p class="text-sm sm:text-base font-semibold text-slate-700 mb-4 flex items-center">
+                            <i class="fa-solid fa-notes-medical text-navy mr-2"></i>
+                            Navneet Jain Health Centre, Mumbai
+                        </p>
+                        <ul class="space-y-2.5 text-sm sm:text-[15px] text-slate-700 list-disc pl-5 leading-relaxed">
+                            <li>Managed outpatient caseloads independently, performing targeted musculoskeletal and neurological evaluations.</li>
+                            <li>Maintained detailed clinical documentation, tracking objective recovery milestones across multi-week rehabilitation cycles.</li>
+                            <li>Adjusted exercise progressions and manual therapy interventions based on continuous patient reassessment.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="relative pl-7 sm:pl-10">
+                    <span class="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-navy ring-4 ring-slate-100"></span>
+                    <div class="bg-clinicalBg rounded-2xl border border-slate-200 p-6 sm:p-7 shadow-sm">
+                        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-2">
+                            <h3 class="text-lg sm:text-xl font-bold text-navy">Intern</h3>
+                            <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold bg-slate-200/80 text-slate-700 w-fit">
+                                October 2022 to December 2022
+                            </span>
+                        </div>
+                        <p class="text-sm sm:text-base font-semibold text-slate-700 mb-4 flex items-center">
+                            <i class="fa-solid fa-user-doctor text-navy mr-2"></i>
+                            Wockhardt Hospitals, Mumbai
+                        </p>
+                        <ul class="space-y-2.5 text-sm sm:text-[15px] text-slate-700 list-disc pl-5 leading-relaxed">
+                            <li>Assisted senior physiotherapists in administering therapeutic exercises to improve strength, flexibility, balance, and coordination.</li>
+                            <li>Enforced strict hospital safety and infection control protocols during patient transfers and positioning.</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- EDUCATION & CERTIFICATIONS -->
+    <section id="education" class="py-16 sm:py-20">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 space-y-14">
+            
+            <div>
+                <span class="text-xs font-bold uppercase tracking-wider text-teal">Academic Background</span>
+                <h2 class="text-2xl sm:text-3xl font-bold text-navy tracking-tight mt-1">Education</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="bg-white rounded-2xl border border-slate-200 p-6 sm:p-8 shadow-sm">
+                    <div class="w-11 h-11 rounded-xl bg-teal/10 text-teal flex items-center justify-center mb-4">
+                        <i class="fa-solid fa-graduation-cap text-lg"></i>
+                    </div>
+                    <span class="text-xs font-bold uppercase tracking-wider text-teal">Postgraduate Candidate</span>
+                    <h3 class="text-lg sm:text-xl font-bold text-navy mt-1 mb-2">Master in Neurophysiotherapy</h3>
+                    <p class="text-sm font-semibold text-slate-700 mb-2">Maharashtra University of Health Sciences (MUHS)</p>
+                    <p class="text-sm text-slate-600">Advanced specialization focusing on neurological assessment, evidence-based neurorehabilitation, and motor recovery pathways.</p>
+                </div>
+
+                <div class="bg-white rounded-2xl border border-slate-200 p-6 sm:p-8 shadow-sm">
+                    <div class="w-11 h-11 rounded-xl bg-navy/10 text-navy flex items-center justify-center mb-4">
+                        <i class="fa-solid fa-user-graduate text-lg"></i>
+                    </div>
+                    <span class="text-xs font-bold uppercase tracking-wider text-navy">Undergraduate Degree</span>
+                    <h3 class="text-lg sm:text-xl font-bold text-navy mt-1 mb-2">Bachelor of Physiotherapy (BPT)</h3>
+                    <p class="text-sm font-semibold text-slate-700 mb-2">MUHS Affiliated Institution</p>
+                    <p class="text-sm text-slate-600">Comprehensive foundational training encompassing musculoskeletal care, clinical rotations, electrotherapy, and patient management.</p>
+                </div>
+            </div>
+
+            <div class="pt-6">
+                <div class="mb-8">
+                    <span class="text-xs font-bold uppercase tracking-wider text-teal">Continuous Professional Development</span>
+                    <h2 class="text-2xl sm:text-3xl font-bold text-navy tracking-tight mt-1">Certifications &amp; Workshops</h2>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+                    <div class="bg-white rounded-2xl border border-slate-200 p-6 shadow-sm">
+                        <div class="w-9 h-9 rounded-lg bg-teal/10 text-teal flex items-center justify-center mb-3">
+                            <i class="fa-solid fa-certificate"></i>
+                        </div>
+                        <h3 class="text-base font-bold text-navy mb-1">Bobath Approach Workshop</h3>
+                        <p class="text-xs text-slate-500 mb-2">Specialized Clinical Training</p>
+                        <p class="text-sm text-slate-600">Advanced neurodevelopmental handling strategies for central nervous system lesion recovery.</p>
+                    </div>
+
+                    <div class="bg-white rounded-2xl border border-slate-200 p-6 shadow-sm">
+                        <div class="w-9 h-9 rounded-lg bg-navy/10 text-navy flex items-center justify-center mb-3">
+                            <i class="fa-solid fa-certificate"></i>
+                        </div>
+                        <h3 class="text-base font-bold text-navy mb-1">Neurodynamic Solutions</h3>
+                        <p class="text-xs text-slate-500 mb-2">Upper &amp; Lower Limb Masterclass</p>
+                        <p class="text-sm text-slate-600">Clinical neural mobilization techniques for peripheral nerve entrapment and tension syndromes.</p>
+                    </div>
+
+                    <div class="bg-white rounded-2xl border border-slate-200 p-6 shadow-sm">
+                        <div class="w-9 h-9 rounded-lg bg-teal/10 text-teal flex items-center justify-center mb-3">
+                            <i class="fa-solid fa-certificate"></i>
+                        </div>
+                        <h3 class="text-base font-bold text-navy mb-1">Antenatal &amp; Postnatal Care</h3>
+                        <p class="text-xs text-slate-500 mb-2">Maternal Fitness Certification</p>
+                        <p class="text-sm text-slate-600">Safe exercise prescription and core stabilization protocols during and after pregnancy.</p>
+                    </div>
+
+                    <div class="bg-white rounded-2xl border border-slate-200 p-6 shadow-sm">
+                        <div class="w-9 h-9 rounded-lg bg-navy/10 text-navy flex items-center justify-center mb-3">
+                            <i class="fa-solid fa-certificate"></i>
+                        </div>
+                        <h3 class="text-base font-bold text-navy mb-1">Advanced Taping Techniques</h3>
+                        <p class="text-xs text-slate-500 mb-2">Kinesiology &amp; Rigid Taping</p>
+                        <p class="text-sm text-slate-600">Application methods for neuromuscular facilitation, joint stabilization, and pain modulation.</p>
+                    </div>
+
+                    <div class="bg-white rounded-2xl border border-slate-200 p-6 shadow-sm">
+                        <div class="w-9 h-9 rounded-lg bg-teal/10 text-teal flex items-center justify-center mb-3">
+                            <i class="fa-solid fa-certificate"></i>
+                        </div>
+                        <h3 class="text-base font-bold text-navy mb-1">Geriatric Rehabilitation</h3>
+                        <p class="text-xs text-slate-500 mb-2">Fall Prevention &amp; Mobility</p>
+                        <p class="text-sm text-slate-600">Specialized balance training and sarcopenia management for older adults.</p>
+                    </div>
+
+                    <div class="bg-white rounded-2xl border border-slate-200 p-6 shadow-sm">
+                        <div class="w-9 h-9 rounded-lg bg-navy/10 text-navy flex items-center justify-center mb-3">
+                            <i class="fa-solid fa-certificate"></i>
+                        </div>
+                        <h3 class="text-base font-bold text-navy mb-1">Basic Life Support (BLS)</h3>
+                        <p class="text-xs text-slate-500 mb-2">Emergency Response Certification</p>
+                        <p class="text-sm text-slate-600">CPR and acute emergency protocol training for healthcare environments.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- APPOINTMENTS & SERVICE AREA -->
+    <section id="appointments" class="py-16 sm:py-20 bg-white border-y border-slate-200">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-12">
+                <span class="text-xs font-bold uppercase tracking-wider text-teal">Direct Consultation</span>
+                <h2 class="text-2xl sm:text-3xl font-bold text-navy tracking-tight mt-1">Book an Appointment</h2>
+                <p class="text-sm sm:text-base text-slate-600 mt-2">Schedule home-visit physiotherapy across Mumbai or connect online from anywhere.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Home Visits -->
+                <div class="bg-clinicalBg rounded-2xl border border-slate-200 p-6 sm:p-8 shadow-sm flex flex-col justify-between">
+                    <div class="space-y-4">
+                        <div class="w-12 h-12 rounded-xl bg-teal/10 text-teal flex items-center justify-center text-xl">
+                            <i class="fa-solid fa-house-medical"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-navy">Home-Visit Physiotherapy</h3>
+                        <p class="text-sm font-semibold text-teal">Service Area: Byculla to Dadar, Mumbai</p>
+                        <p class="text-sm text-slate-600 leading-relaxed">
+                            Personalized, equipment-supported physiotherapy sessions conducted directly in your home. Ideal for postoperative care, neurological rehabilitation, and patients with limited mobility.
+                        </p>
+                    </div>
+                    <div class="pt-6">
+                        <a href="https://wa.me/919321580210?text=Hi%20Sailee,%20I%20would%20like%20to%20book%20a%20home-visit%20physiotherapy%20session%20in%20Mumbai." target="_blank" class="w-full inline-flex items-center justify-center space-x-2 px-6 py-3.5 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-semibold text-sm shadow-md transition">
+                            <i class="fa-brands fa-whatsapp text-lg"></i>
+                            <span>Book Home Visit</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Online Consultations -->
+                <div class="bg-clinicalBg rounded-2xl border border-slate-200 p-6 sm:p-8 shadow-sm flex flex-col justify-between">
+                    <div class="space-y-4">
+                        <div class="w-12 h-12 rounded-xl bg-navy/10 text-navy flex items-center justify-center text-xl">
+                            <i class="fa-solid fa-laptop-medical"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-navy">Online Tele-Rehabilitation</h3>
+                        <p class="text-sm font-semibold text-teal">Available Globally / PAN India</p>
+                        <p class="text-sm text-slate-600 leading-relaxed">
+                            Structured video consultations offering ergonomic assessments, customized home exercise progressions, and ongoing recovery guidance.
+                        </p>
+                    </div>
+                    <div class="pt-6">
+                        <a href="https://wa.me/919321580210?text=Hi%20Sailee,%20I%20would%20like%20to%20book%20an%20online%20physiotherapy%20consultation." target="_blank" class="w-full inline-flex items-center justify-center space-x-2 px-6 py-3.5 rounded-xl bg-navy hover:bg-navy-dark text-white font-semibold text-sm shadow-md transition">
+                            <i class="fa-brands fa-whatsapp text-lg"></i>
+                            <span>Book Online Session</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FEEDBACK SECTION -->
+    <section id="feedback" class="py-16 sm:py-20 bg-clinicalBg border-b border-slate-200">
+        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-10">
+                <span class="text-xs font-bold uppercase tracking-wider text-teal">Patient Testimonials</span>
+                <h2 class="text-2xl sm:text-3xl font-bold text-navy tracking-tight mt-1">Share Your Experience</h2>
+                <p class="text-sm sm:text-base text-slate-600 mt-2">Your feedback helps improve clinical care and guides future patients.</p>
+            </div>
+
+            <div class="bg-white rounded-2xl border border-slate-200 p-6 sm:p-8 shadow-sm">
+                <form id="feedbackForm" class="space-y-5">
+                    <div>
+                        <label for="fbName" class="block text-sm font-semibold text-navy mb-1.5">Your Name</label>
+                        <input type="text" id="fbName" required class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:outline-none focus:border-teal text-sm">
+                    </div>
+                    <div>
+                        <label for="fbRating" class="block text-sm font-semibold text-navy mb-1.5">Rating</label>
+                        <select id="fbRating" class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:outline-none focus:border-teal text-sm bg-white">
+                            <option value="5">5 Stars - Excellent Care</option>
+                            <option value="4">4 Stars - Very Good</option>
+                            <option value="3">3 Stars - Good</option>
+                            <option value="2">2 Stars - Fair</option>
+                            <option value="1">1 Star - Poor</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="fbComments" class="block text-sm font-semibold text-navy mb-1.5">Your Comments</label>
+                        <textarea id="fbComments" rows="4" required class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:outline-none focus:border-teal text-sm" placeholder="Write your feedback here..."></textarea>
+                    </div>
+                    <button type="submit" class="w-full py-3.5 rounded-xl bg-teal hover:bg-teal-dark text-white font-semibold text-sm shadow-md transition">
+                        Send Feedback via WhatsApp
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-navy text-white py-12">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-6 text-center sm:text-left">
+            <div>
+                <span class="block text-lg font-bold tracking-tight">Sailee V. Pomendkar</span>
+                <span class="block text-xs text-teal-light mt-1">Physiotherapy &amp; Neurorehabilitation Specialist</span>
+            </div>
+            <div class="flex items-center space-x-4">
+                <a href="https://wa.me/919321580210" target="_blank" aria-label="WhatsApp" class="w-10 h-10 rounded-xl bg-white/10 hover:bg-white/20 flex items-center justify-center transition">
+                    <i class="fa-brands fa-whatsapp text-lg"></i>
+                </a>
+            </div>
+            <p class="text-xs text-slate-400">
+                &copy; 2026 Sailee V. Pomendkar. All rights reserved.
+            </p>
+        </div>
+    </footer>
+
+    <!-- JAVASCRIPT -->
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const mobileNavLinks = document.querySelectorAll('.mobile-nav-link');
+
+        if (mobileMenuBtn && mobileMenu) {
+            mobileMenuBtn.addEventListener('click', (e) => {
+                e.stopPropagation();
+                mobileMenu.classList.toggle('hidden');
+            });
+
+            mobileNavLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    mobileMenu.classList.add('hidden');
+                });
+            });
+        }
+
+        // Competencies Filter
+        function filterCompetencies(category, btn) {
+            const cards = document.querySelectorAll('.comp-card');
+            const buttons = document.querySelectorAll('.comp-filter-btn');
+
+            buttons.forEach(b => {
+                b.classList.remove('active', 'bg-navy', 'text-white', 'shadow-sm');
+                b.classList.add('bg-white', 'text-slate-600', 'border', 'border-slate-200');
+            });
+
+            btn.classList.remove('bg-white', 'text-slate-600', 'border', 'border-slate-200');
+            btn.classList.add('active', 'bg-navy', 'text-white', 'shadow-sm');
+
+            cards.forEach(card => {
+                if (category === 'all' || card.getAttribute('data-category') === category) {
+                    card.style.display = 'block';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        }
+
+        // Feedback Form WhatsApp Integration
+        document.getElementById('feedbackForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const name = document.getElementById('fbName').value.trim();
+            const rating = document.getElementById('fbRating').value;
+            const comments = document.getElementById('fbComments').value.trim();
+            const message = encodeURIComponent(`*New Patient Feedback*\n\n*Name:* ${name}\n*Rating:* ${rating} / 5 Stars\n*Comments:* ${comments}`);
+            window.location.href = `https://wa.me/919321580210?text=${message}`;
+        });
+    </script>
+</body>
+</html>
